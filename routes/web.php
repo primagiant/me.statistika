@@ -17,7 +17,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('dashboard');
+    $skor = App\Models\Data::count();
+    $moment = App\Models\Moment::count();
+    $ujit = App\Models\UjiT::count();
+    $anava = App\Models\UjiAnava::count();
+    return view('dashboard', [
+        'skor' => $skor,
+        'moment' => $moment,
+        'ujit' => $ujit,
+        'anava' => $anava,
+    ]);
 })->name('dashboard');
 
 Route::get('/about', function () {

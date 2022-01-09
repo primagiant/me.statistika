@@ -13,10 +13,10 @@
                                 <div class="flex flex-wrap">
                                     <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
                                         <h5 class="text-gray-400 uppercase font-bold text-xs">
-                                            Traffic
+                                            Data Skor
                                         </h5>
                                         <span class="font-semibold text-xl text-gray-700">
-                                            350,897
+                                            {{ $skor }}
                                         </span>
                                     </div>
                                     <div class="relative w-auto pl-4 flex-initial">
@@ -26,14 +26,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <p class="text-sm text-gray-400 mt-4">
-                                    <span class="text-emerald-500 mr-2">
-                                        <i class="fas fa-arrow-up"></i> 3.48%
-                                    </span>
-                                    <span class="whitespace-nowrap">
-                                        Since last month
-                                    </span>
-                                </p>
                             </div>
                         </div>
                     </div>
@@ -43,10 +35,10 @@
                                 <div class="flex flex-wrap">
                                     <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
                                         <h5 class="text-gray-400 uppercase font-bold text-xs">
-                                            New users
+                                            Data Moment
                                         </h5>
                                         <span class="font-semibold text-xl text-gray-700">
-                                            2,356
+                                            {{ $moment }}
                                         </span>
                                     </div>
                                     <div class="relative w-auto pl-4 flex-initial">
@@ -56,12 +48,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <p class="text-sm text-gray-400 mt-4">
-                                    <span class="text-red-500 mr-2">
-                                        <i class="fas fa-arrow-down"></i> 3.48%
-                                    </span>
-                                    <span class="whitespace-nowrap"> Since last week </span>
-                                </p>
                             </div>
                         </div>
                     </div>
@@ -71,10 +57,10 @@
                                 <div class="flex flex-wrap">
                                     <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
                                         <h5 class="text-gray-400 uppercase font-bold text-xs">
-                                            Sales
+                                            Data Uji T
                                         </h5>
                                         <span class="font-semibold text-xl text-gray-700">
-                                            924
+                                            {{ $ujit }}
                                         </span>
                                     </div>
                                     <div class="relative w-auto pl-4 flex-initial">
@@ -84,12 +70,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <p class="text-sm text-gray-400 mt-4">
-                                    <span class="text-orange-500 mr-2">
-                                        <i class="fas fa-arrow-down"></i> 1.10%
-                                    </span>
-                                    <span class="whitespace-nowrap"> Since yesterday </span>
-                                </p>
                             </div>
                         </div>
                     </div>
@@ -99,10 +79,10 @@
                                 <div class="flex flex-wrap">
                                     <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
                                         <h5 class="text-gray-400 uppercase font-bold text-xs">
-                                            Performance
+                                            Data Uji Anava
                                         </h5>
                                         <span class="font-semibold text-xl text-gray-700">
-                                            49,65%
+                                            {{ $anava }}
                                         </span>
                                     </div>
                                     <div class="relative w-auto pl-4 flex-initial">
@@ -112,14 +92,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <p class="text-sm text-gray-400 mt-4">
-                                    <span class="text-emerald-500 mr-2">
-                                        <i class="fas fa-arrow-up"></i> 12%
-                                    </span>
-                                    <span class="whitespace-nowrap">
-                                        Since last month
-                                    </span>
-                                </p>
                             </div>
                         </div>
                     </div>
@@ -128,52 +100,6 @@
         </div>
     </div>
     <div class="px-4 md:px-10 mx-auto w-full -m-24">
-        <div class="flex flex-wrap">
-            <div class="w-full xl:w-8/12 mb-12 xl:mb-0 px-4">
-                <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded bg-gray-700">
-                    <div class="rounded-t mb-0 px-4 py-3 bg-transparent">
-                        <div class="flex flex-wrap items-center">
-                            <div class="relative w-full max-w-full flex-grow flex-1">
-                                <h6 class="uppercase text-gray-100 mb-1 text-xs font-semibold">
-                                    Overview
-                                </h6>
-                                <h2 class="text-white text-xl font-semibold">
-                                    Sales value
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-4 flex-auto">
-                        <!-- Chart -->
-                        <div class="relative h-350-px">
-                            <canvas id="line-chart"></canvas>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="w-full xl:w-4/12 px-4">
-                <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded">
-                    <div class="rounded-t mb-0 px-4 py-3 bg-transparent">
-                        <div class="flex flex-wrap items-center">
-                            <div class="relative w-full max-w-full flex-grow flex-1">
-                                <h6 class="uppercase text-gray-400 mb-1 text-xs font-semibold">
-                                    Performance
-                                </h6>
-                                <h2 class="text-gray-700 text-xl font-semibold">
-                                    Total orders
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-4 flex-auto">
-                        <!-- Chart -->
-                        <div class="relative h-350-px">
-                            <canvas id="bar-chart"></canvas>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="flex flex-wrap mt-4">
             <div class="w-full xl:w-8/12 mb-12 xl:mb-0 px-4">
                 <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded">
