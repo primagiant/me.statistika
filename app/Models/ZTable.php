@@ -9,5 +9,6 @@ class ZTable extends Model
 {
     use HasFactory;
     protected $table = 'z_table';
+    protected $primary = 'z';
     public $timestamps = false;
 }
