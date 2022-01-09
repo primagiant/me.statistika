@@ -6,38 +6,22 @@ use Illuminate\Http\Request;
 
 class DataController extends Controller
 {
-    public function index()
+    public function skor()
     {
-        //
+        return view('pages.datalist.skor');
+    }
+    public function moment()
+    {
+        return view('pages.datalist.moment');
     }
 
-    public function create()
+    public function ujit()
     {
-        //
+        return view('pages.datalist.ujit');
     }
 
-    public function store(Request $request)
+    public function anava()
     {
-        //
-    }
-
-    public function show($id)
-    {
-        //
-    }
-
-    public function edit($id)
-    {
-        //
-    }
-
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    public function destroy($id)
-    {
-        //
+        return view('pages.datalist.anava');
     }
 }

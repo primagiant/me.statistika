@@ -25,17 +25,9 @@
             </div>
             <div class="lg:flex flex-grow items-center bg-white lg:bg-opacity-0 lg:shadow-none hidden"
                 id="example-collapse-navbar">
-                <ul class="flex flex-col lg:flex-row list-none mr-auto">
-                    <li class="flex items-center">
-                        <a class="lg:text-white lg:hover:text-gray-200 text-gray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                            href="https://www.creative-tim.com/learning-lab/tailwind/js/overview/notus?ref=njs-profile"><i
-                                class="lg:text-gray-200 text-gray-400 far fa-file-alt text-lg leading-lg mr-2"></i>
-                            Docs</a>
-                    </li>
-                </ul>
                 <ul class="flex flex-col lg:flex-row list-none lg:ml-auto items-center">
                     <li class="flex items-center">
-                        <a href=""
+                        <a href="https://www.github.com/primagiant?ref=njs-profile" target="_blank"
                             class="bg-white text-gray-700 active:bg-gray-50 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
                             type="button">
                             <i class="fab fa-github"></i> Github
@@ -68,68 +60,22 @@
                         <div class="flex flex-wrap justify-center">
                             <div class="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
                                 <div class="relative">
-                                    <img alt="..." src="../assets/img/team-2-800x800.jpg"
+                                    <img alt="..." src="{{ asset('img/profile.png') }}"
                                         class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-150-px" />
                                 </div>
                             </div>
-                            <div class="w-full lg:w-4/12 px-4 lg:order-3 lg:text-right lg:self-center">
-                                <div class="py-6 px-3 mt-32 sm:mt-0">
-                                    <button
-                                        class="bg-pink-500 active:bg-pink-600 uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150"
-                                        type="button">
-                                        Connect
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="w-full lg:w-4/12 px-4 lg:order-1">
-                                <div class="flex justify-center py-4 lg:pt-4 pt-8">
-                                    <div class="mr-4 p-3 text-center">
-                                        <span
-                                            class="text-xl font-bold block uppercase tracking-wide text-gray-600">22</span><span
-                                            class="text-sm text-gray-400">Friends</span>
-                                    </div>
-                                    <div class="mr-4 p-3 text-center">
-                                        <span
-                                            class="text-xl font-bold block uppercase tracking-wide text-gray-600">10</span><span
-                                            class="text-sm text-gray-400">Photos</span>
-                                    </div>
-                                    <div class="lg:mr-4 p-3 text-center">
-                                        <span
-                                            class="text-xl font-bold block uppercase tracking-wide text-gray-600">89</span><span
-                                            class="text-sm text-gray-400">Comments</span>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
-                        <div class="text-center mt-12">
-                            <h3 class="text-4xl font-semibold leading-normal mb-2 text-gray-700 mb-2">
-                                Jenna Stones
+                        <div class="text-center my-24">
+                            <h3 class="text-4xl font-semibold leading-normal text-gray-700 mb-2">
+                                Kadek Prima Giant Marta Dinata
                             </h3>
                             <div class="text-sm leading-normal mt-0 mb-2 text-gray-400 font-bold uppercase">
                                 <i class="fas fa-map-marker-alt mr-2 text-lg text-gray-400"></i>
-                                Los Angeles, California
-                            </div>
-                            <div class="mb-2 text-gray-600 mt-10">
-                                <i class="fas fa-briefcase mr-2 text-lg text-gray-400"></i>Solution Manager -
-                                Creative Tim Officer
+                                Singaraja, Buleleng, Bali
                             </div>
                             <div class="mb-2 text-gray-600">
-                                <i class="fas fa-university mr-2 text-lg text-gray-400"></i>University of Computer
-                                Science
-                            </div>
-                        </div>
-                        <div class="mt-10 py-10 border-t border-gray-200 text-center">
-                            <div class="flex flex-wrap justify-center">
-                                <div class="w-full lg:w-9/12 px-4">
-                                    <p class="mb-4 text-lg leading-relaxed text-gray-700">
-                                        An artist of considerable range, Jenna the name taken by
-                                        Melbourne-raised, Brooklyn-based Nick Murphy writes,
-                                        performs and records all of his own music, giving it a
-                                        warm, intimate feel with a solid groove structure. An
-                                        artist of considerable range.
-                                    </p>
-                                    <a href="#pablo" class="font-normal text-pink-500">Show more</a>
-                                </div>
+                                <i class="fas fa-university mr-2 text-lg text-gray-400"></i>Universitas Pendidikan
+                                Genesha
                             </div>
                         </div>
                     </div>
@@ -148,21 +94,22 @@
         <div class="container mx-auto px-4">
             <div class="flex flex-wrap text-center lg:text-left">
                 <div class="w-full lg:w-6/12 px-4">
-                    <h4 class="text-3xl font-semibold">Let's keep in touch!</h4>
+                    <h4 class="text-3xl font-semibold">Mari kita tetap berhubungan!</h4>
                     <h5 class="text-lg mt-0 mb-2 text-gray-600">
-                        Find us on any of these platforms, we respond 1-2 business days.
+                        Temukan saya di salah satu platform ini.
                     </h5>
                     <div class="mt-6 lg:mb-0 mb-6">
                         <button
                             class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                             type="button">
-                            <i class="fab fa-twitter"></i></button><button
+                            <i class="fab fa-twitter"></i>
+                        </button>
+                        <button
                             class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                             type="button">
-                            <i class="fab fa-facebook-square"></i></button><button
-                            class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                            type="button">
-                            <i class="fab fa-dribbble"></i></button><button
+                            <i class="fab fa-facebook-square"></i>
+                        </button>
+                        <button
                             class="bg-white text-gray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                             type="button">
                             <i class="fab fa-github"></i>
@@ -172,48 +119,16 @@
                 <div class="w-full lg:w-6/12 px-4">
                     <div class="flex flex-wrap items-top mb-6">
                         <div class="w-full lg:w-4/12 px-4 ml-auto">
-                            <span class="block uppercase text-gray-500 text-sm font-semibold mb-2">Useful
-                                Links</span>
+                            <span class="block uppercase text-gray-500 text-sm font-semibold mb-2">LINK LAINNYA</span>
                             <ul class="list-unstyled">
                                 <li>
                                     <a class="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm"
-                                        href="https://www.creative-tim.com/presentation?ref=njs-profile">About Us</a>
+                                        href="{{ route('dashboard') }}">Statistika Website</a>
                                 </li>
                                 <li>
-                                    <a class="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm"
-                                        href="https://blog.creative-tim.com?ref=njs-profile">Blog</a>
-                                </li>
-                                <li>
-                                    <a class="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm"
-                                        href="https://www.github.com/creativetimofficial?ref=njs-profile">Github</a>
-                                </li>
-                                <li>
-                                    <a class="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm"
-                                        href="https://www.creative-tim.com/bootstrap-themes/free?ref=njs-profile">Free
-                                        Products</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="w-full lg:w-4/12 px-4">
-                            <span class="block uppercase text-gray-500 text-sm font-semibold mb-2">Other
-                                Resources</span>
-                            <ul class="list-unstyled">
-                                <li>
-                                    <a class="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm"
-                                        href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-profile">MIT
-                                        License</a>
-                                </li>
-                                <li>
-                                    <a class="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm"
-                                        href="https://creative-tim.com/terms?ref=njs-profile">Terms &amp; Conditions</a>
-                                </li>
-                                <li>
-                                    <a class="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm"
-                                        href="https://creative-tim.com/privacy?ref=njs-profile">Privacy Policy</a>
-                                </li>
-                                <li>
-                                    <a class="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm"
-                                        href="https://creative-tim.com/contact-us?ref=njs-profile">Contact Us</a>
+                                    <a target="_blank"
+                                        class="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm"
+                                        href="https://www.github.com/primagiant?ref=njs-profile">Github</a>
                                 </li>
                             </ul>
                         </div>
@@ -225,8 +140,9 @@
                 <div class="w-full md:w-4/12 px-4 mx-auto text-center">
                     <div class="text-sm text-gray-500 font-semibold py-1">
                         Copyright © <span id="get-current-year"></span> {{ config('app.name') }} by
-                        <a href="https://www.creative-tim.com?ref=njs-profile"
-                            class="text-gray-500 hover:text-gray-800">Creative Tim</a>.
+                        <a href="https://www.github.com/primagiant?ref=njs-profile" target="_blank"
+                            class="text-gray-500 hover:text-gray-800">Prima
+                            Giant</a>.
                     </div>
                 </div>
             </div>
