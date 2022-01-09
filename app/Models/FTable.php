@@ -9,4 +9,5 @@ class FTable extends Model
 {
     use HasFactory;
     protected $table = 'f_table';
+    public $timestamps = false;
 }

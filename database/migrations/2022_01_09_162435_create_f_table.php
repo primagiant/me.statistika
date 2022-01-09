@@ -14,7 +14,7 @@ class CreateFTable extends Migration
     public function up()
     {
         Schema::create('f_table', function (Blueprint $table) {
-            $table->integer('df1', 3)->nullable()->default('NULL');
+            $table->integer('df1', 3);
             $table->string('satu', 6)->nullable()->default('NULL');
             $table->string('dua', 6)->nullable()->default('NULL');
             $table->string('tiga', 6)->nullable()->default('NULL');
