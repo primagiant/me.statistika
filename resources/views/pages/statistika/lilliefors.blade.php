@@ -81,6 +81,26 @@
                                     </td>
                                 </tr>
                             @endforeach
+                            <tr>
+                                <th colspan="3"
+                                    class=" w-12 px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
+                                    Count Data
+                                </th>
+                                <th colspan="4"
+                                    class=" w-12 px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
+                                    {{ $dataNum }}
+                                </th>
+                            </tr>
+                            <tr>
+                                <th colspan="3"
+                                    class=" w-12 px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
+                                    Lilliefors
+                                </th>
+                                <th colspan="4"
+                                    class=" w-12 px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
+                                    {{ $totalLLF }}
+                                </th>
+                            </tr>
                         </tbody>
                     </table>
                 </div>

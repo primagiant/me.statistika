@@ -189,7 +189,7 @@
                 </li>
             </ul>
 
-            <!-- Divider -->
+            {{-- <!-- Divider -->
             <hr class="my-4 md:min-w-full" />
             <!-- Heading -->
             <h6 class="md:min-w-full text-gray-500 text-xs uppercase font-bold block pt-1 pb-4 no-underline">
@@ -215,7 +215,7 @@
                         Import
                     </a>
                 </li>
-            </ul>
+            </ul> --}}
         </div>
     </div>
 </nav>

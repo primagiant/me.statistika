@@ -136,6 +136,16 @@
                                     </td>
                                 </tr>
                             @endforeach
+                            <tr>
+                                <th colspan="6"
+                                    class="px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
+                                    Total Chi
+                                </th>
+                                <th colspan="6"
+                                    class="px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
+                                    {{ $chi }}
+                                </th>
+                            </tr>
                         </tbody>
                     </table>
                 </div>

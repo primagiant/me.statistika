@@ -125,6 +125,19 @@
                                 <th
                                     class="px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
                                     {{ number_format($avgY, 2) }}</th>
+                                <th colspan="5"
+                                    class="px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
+                                </th>
+                            </tr>
+                            <tr>
+                                <th colspan="4"
+                                    class="px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
+                                    Korelasi Produk Moment
+                                </th>
+                                <th colspan="4"
+                                    class="px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
+                                    {{ $corelation }}
+                                </th>
                             </tr>
                         </tbody>
                     </table>
