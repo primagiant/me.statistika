@@ -1,4 +1,3 @@
-
 module.exports = {
   content: [
     "./resources/**/*.blade.php",
@@ -79,5 +78,8 @@ module.exports = {
     "visited",
     "disabled",
   ],
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/forms"),
+    require('tailwindcss-plugins/pagination'),
+  ],
 }

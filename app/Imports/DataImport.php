@@ -3,21 +3,20 @@
 namespace App\Imports;
 
 use App\Models\Data;
-use Illuminate\Support\Collection;
-use Maatwebsite\Excel\Concerns\ToCollection;
+use Maatwebsite\Excel\Concerns\ToModel;
 
-class DataImport implements ToCollection
+class DataImport implements ToModel
 {
     /**
-     * @param Collection $collection
+     * @param array $row
+     *
+     * @return \Illuminate\Database\Eloquent\Model|null
      */
-    public function collection(Collection $collection)
+    public function model(array $row)
     {
-        foreach ($collection as $row) {
-            Data::create([
-                'nama' => "-",
-                'nilai_1' => $row[0],
-            ]);
-        }
+        return new Data([
+            'nama' => "-",
+            'nilai_1' => $row[0],
+        ]);
     }
 }

@@ -49,36 +49,38 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    1
-                                </th>
-                                <td
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </td>
-                                <td
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </td>
-                                <td
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </td>
-                                <td
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </td>
-                                <td
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </td>
-                                <td
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </td>
-                            </tr>
+                            @foreach ($frekKum as $index => $item)
+                                <tr>
+                                    <th
+                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                        {{ $index + 1 }}
+                                    </th>
+                                    <td
+                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                        {{ $frek[0][$index]->nilai_1 }}
+                                    </td>
+                                    <td
+                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                        {{ $item }}
+                                    </td>
+                                    <td
+                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                        {{ $Zi[$index] }}
+                                    </td>
+                                    <td
+                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                        {{ $F_zi[$index] }}
+                                    </td>
+                                    <td
+                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                        {{ $S_zi[$index] }}
+                                    </td>
+                                    <td
+                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                        {{ $LLF[$index] }}
+                                    </td>
+                                </tr>
+                            @endforeach
                         </tbody>
                     </table>
                 </div>

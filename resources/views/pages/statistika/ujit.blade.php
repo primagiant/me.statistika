@@ -33,48 +33,62 @@
                             </tr>
                         </thead>
                         <tbody>
+                            @foreach ($ujiT as $index => $item)
+                                <tr>
+                                    <th
+                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                        {{ $index + 1 }}
+                                    </th>
+                                    <td
+                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                        {{ $item->x1 }}
+                                    </td>
+                                    <td
+                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                        {{ $item->x2 }}
+                                    </td>
+                                </tr>
+                            @endforeach
                             <tr>
                                 <th
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    1
-                                </th>
-                                <td
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    3,985
-                                </td>
-                                <td
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </td>
-                            </tr>
-                            <tr>
-                                <th
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                    class="px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
                                     Rata Rata
                                 </th>
                                 <td
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    1
+                                    class="px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
+                                    {{ number_format($avgx1, 2) }}
+                                </td>
+                                <td
+                                    class="px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
+                                    {{ number_format($avgx1, 2) }}
                                 </td>
                             </tr>
                             <tr>
                                 <th
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                    class="px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
                                     Variant
                                 </th>
                                 <td
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    3,985
+                                    class="px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
+                                    {{ number_format($variansX1, 2) }}
+                                </td>
+                                <td
+                                    class="px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
+                                    {{ number_format($variansX2, 2) }}
                                 </td>
                             </tr>
                             <tr>
                                 <th
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                    class="px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
                                     Standar <br>Deviasi
                                 </th>
                                 <td
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    3,985
+                                    class="px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
+                                    {{ $sdX1 }}
+                                </td>
+                                <td
+                                    class="px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
+                                    {{ $sdX2 }}
                                 </td>
                             </tr>
                         </tbody>
@@ -104,7 +118,7 @@
                                 </th>
                                 <td
                                     class=" text-center border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                    1,480
+                                    {{ $resUjiT }}
                                 </td>
                             </tr>
                             <tr>
@@ -114,7 +128,7 @@
                                 </th>
                                 <td
                                     class="text-center border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                    1,480
+                                    {{ $TTabel }}
                                 </td>
                             </tr>
                             <tr>
@@ -124,10 +138,17 @@
                                 </th>
                                 <td
                                     class="text-center border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                    <span
-                                        class="bg-lime-500 text-white hover:bg-lime-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150">
-                                        <small>diterima</small>
-                                    </span>
+                                    @if ($status == 'Diterima')
+                                        <span
+                                            class="bg-lime-500 text-white hover:bg-lime-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150">
+                                            <small>{{ $status }}</small>
+                                        </span>
+                                    @else
+                                        <span
+                                            class="bg-red-500 text-white hover:bg-red-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150">
+                                            <small>{{ $status }}</small>
+                                        </span>
+                                    @endif
                                 </td>
                             </tr>
                         </tbody>

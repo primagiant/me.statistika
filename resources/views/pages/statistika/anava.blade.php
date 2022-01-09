@@ -57,98 +57,84 @@
                             </tr>
                         </thead>
                         <tbody>
+                            @foreach ($Anava as $index => $item)
+                                <tr>
+                                    <th
+                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                        {{ $index + 1 }}
+                                    </th>
+                                    <td
+                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                        {{ $item->x1 }}</td>
+                                    <td
+                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                        {{ $item->x2 }}</td>
+                                    <td
+                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                        {{ $item->x3 }}</td>
+                                    <td
+                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                        {{ $X1Sqr[$index] }}</td>
+                                    <td
+                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                        {{ $X2Sqr[$index] }}</td>
+                                    <td
+                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                        {{ $X3Sqr[$index] }}</td>
+                                    <td
+                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                        {{ $Xtotal[$index] }}</td>
+                                    <td
+                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                        {{ $XtotalSqr[$index] }}</td>
+                                </tr>
+                            @endforeach
                             <tr>
                                 <th
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    1
-                                </th>
-                                <td
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </td>
-                                <td
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </td>
-                                <td
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </td>
-                                <td
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </td>
-                                <td
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </td>
-                                <td
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </td>
-                                <td
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </td>
-                                <td
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </td>
-                            </tr>
-                            <tr>
-                                <th
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                    class="px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
                                     &Sigma;
                                 </th>
                                 <th
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </th>
+                                    class="px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
+                                    {{ $sumX1 }} </th>
                                 <th
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </th>
+                                    class="px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
+                                    {{ $sumX2 }}</th>
                                 <th
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </th>
+                                    class="px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
+                                    {{ $sumX3 }}</th>
                                 <th
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </th>
+                                    class="px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
+                                    {{ $sigmaX1Sqr }}</th>
                                 <th
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </th>
+                                    class="px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
+                                    {{ $sigmaX2Sqr }}</t>
                                 <th
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </th>
+                                    class="px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
+                                    {{ $sigmaX3Sqr }}</th>
                                 <th
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </th>
+                                    class="px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
+                                    {{ $sigmaXtotal }}</th>
                                 <th
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </th>
+                                    class="px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
+                                    {{ $sigmaXtotalSqr }}</th>
                             </tr>
                             <tr>
                                 <th
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                    class="px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
                                     Rata-rata
                                 </th>
                                 <th
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
+                                    class="px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
+                                    {{ $avgX1 }}
                                 </th>
                                 <th
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
+                                    class="px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
+                                    {{ $avgX2 }}
                                 </th>
                                 <th
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
+                                    class="px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
+                                    {{ $avgX3 }}
                                 </th>
                             </tr>
                         </tbody>
@@ -197,76 +183,70 @@
                                 </th>
                                 <td
                                     class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </td>
+                                    {{ number_format($JKA, 2) }}</td>
                                 <td
                                     class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </td>
+                                    {{ number_format($DKA, 2) }}</td>
                                 <td
                                     class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </td>
+                                    {{ number_format($RJKA, 2) }}</td>
                                 <td
                                     class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </td>
+                                    {{ number_format($F, 2) }}</td>
                                 <td
                                     class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </td>
+                                    {{ $fTabel }} </td>
                                 <td
                                     class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </td>
+                                    {{ $status }}</td>
                             </tr>
                             <tr>
                                 <th
                                     class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
                                     Dalam
                                 </th>
-                                <th
+                                <td
                                     class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </th>
-                                <th
+                                    {{ number_format($JKD, 2) }}</td>
+                                <td
                                     class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </th>
-                                <th
+                                    {{ number_format($DKD, 2) }}</td>
+                                <td
                                     class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </th>
-                                <th
+                                    {{ number_format($RJKD, 2) }}</td>
+                                <td
                                     class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </th>
-                                <th
+                                    - </td>
+                                <td
                                     class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </th>
-                                <th
+                                    - </td>
+                                <td
                                     class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </th>
+                                </td>
                             </tr>
                             <tr>
                                 <th
                                     class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
                                     Total
                                 </th>
-                                <th
+                                <td
                                     class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </th>
-                                <th
+                                    {{ number_format($JKT, 2) }}</td>
+                                <td
                                     class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </th>
-                                <th
+                                    {{ number_format($DKT, 2) }}</td>
+                                <td
                                     class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </th>
+                                    - </td>
+                                <td
+                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                    - </td>
+                                <td
+                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                    - </td>
+                                <td
+                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                </td>
                             </tr>
                         </tbody>
                     </table>

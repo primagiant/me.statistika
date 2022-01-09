@@ -3,21 +3,21 @@
 namespace App\Imports;
 
 use App\Models\UjiT;
-use Illuminate\Support\Collection;
-use Maatwebsite\Excel\Concerns\ToCollection;
+use Maatwebsite\Excel\Concerns\ToModel;
 
-class UjiTImport implements ToCollection
+class UjiTImport implements ToModel
 {
     /**
-     * @param Collection $collection
+     * @param array $row
+     *
+     * @return \Illuminate\Database\Eloquent\Model|null
      */
-    public function collection(Collection $collection)
+
+    public function model(array $row)
     {
-        foreach ($collection as $row) {
-            UjiT::create([
-                'x1' => $row[0],
-                'x2' => $row[1],
-            ]);
-        }
+        return new UjiT([
+            'x1' => $row[0],
+            'x2' => $row[1],
+        ]);
     }
 }

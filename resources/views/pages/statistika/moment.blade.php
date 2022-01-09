@@ -53,39 +53,78 @@
                             </tr>
                         </thead>
                         <tbody>
+                            @foreach ($moments as $index => $item)
+                                <tr>
+                                    <th
+                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                        {{ $index + 1 }}
+                                    </th>
+                                    <td
+                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                        {{ $moments[$index]->x }}
+                                    </td>
+                                    <td
+                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                        {{ $moments[$index]->y }}
+                                    </td>
+                                    <td
+                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                        {{ $xmin[$index] }}
+                                    </td>
+                                    <td
+                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                        {{ $ymin[$index] }}
+                                    </td>
+                                    <td
+                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                        {{ $xSqr[$index] }}
+                                    </td>
+                                    <td
+                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                        {{ $ySqr[$index] }}
+                                    </td>
+                                    <td
+                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                        {{ $XY[$index] }}
+                                    </td>
+                                </tr>
+                            @endforeach
                             <tr>
                                 <th
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    1
+                                    class="px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
+                                    Jumlah </th>
+                                <th
+                                    class="px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
+                                    {{ $sumX }}</th>
+                                <th
+                                    class="px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
+                                    {{ $sumY }} </th>
+                                <th
+                                    class="px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
                                 </th>
-                                <td
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </td>
-                                <td
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </td>
-                                <td
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </td>
-                                <td
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </td>
-                                <td
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </td>
-                                <td
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </td>
-                                <td
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </td>
+                                <th
+                                    class="px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
+                                </th>
+                                <th
+                                    class="px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
+                                    {{ $sumXSqr }}</th>
+                                <th
+                                    class="px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
+                                    {{ $sumYSqr }}</th>
+                                <th
+                                    class="px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
+                                    {{ $sumXY }}</th>
+                            </tr>
+                            <tr>
+                                <th
+                                    class="px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
+                                    Rata-Rata </th>
+                                <th
+                                    class="px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
+                                    {{ number_format($avgX, 2) }}</th>
+                                <th
+                                    class="px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
+                                    {{ number_format($avgY, 2) }}</th>
                             </tr>
                         </tbody>
                     </table>

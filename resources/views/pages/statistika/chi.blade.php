@@ -52,10 +52,6 @@
                                 </th>
                                 <th rowspan="2"
                                     class="px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
-                                    L <span class="lowercase">x</span> N ( F<sub class="lowercase">e</sub> )
-                                </th>
-                                <th rowspan="2"
-                                    class="px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
                                     ( F<sub>0</sub> - F<sub class="lowercase">e</sub> )<sup>2</sup> / F<sub
                                         class="lowercase">e</sub>
                                 </th>
@@ -88,60 +84,58 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    1
-                                </th>
-                                <td
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    3,985
-                                </td>
-                                <td
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </td>
-                                <td
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </td>
-                                <td
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </td>
-                                <td
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </td>
-                                <td
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </td>
-                                <td
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </td>
-                                <td
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </td>
-                                <td
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </td>
-                                <td
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </td>
-                                <td
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </td>
-                                <td
-                                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
-                                    319
-                                </td>
-                            </tr>
+                            @foreach ($data as $index => $item)
+                                <tr>
+                                    <th
+                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                        {{ $index + 1 }}
+                                    </th>
+                                    <td
+                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                        {{ $item }}
+                                    </td>
+                                    <td
+                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                        {{ $frek[$index] }}
+                                    </td>
+                                    <td
+                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                        {{ $botlim[$index] }}
+                                    </td>
+                                    <td
+                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                        {{ $toplim[$index] }}
+                                    </td>
+                                    <td
+                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                        {{ $botZval[$index] }}
+                                    </td>
+                                    <td
+                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                        {{ $topZval[$index] }}
+                                    </td>
+                                    <td
+                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                        {{ $zTabelBot[$index] }}
+                                    </td>
+                                    <td
+                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                        {{ $zTabelTop[$index] }}
+                                    </td>
+                                    <td
+                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                        {{ $Lpps[$index] }}
+                                    </td>
+                                    <td
+                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                        {{ $Fe[$index] }}
+                                    </td>
+                                    <td
+                                        class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center">
+                                        {{ $kai[$index] }}
+                                    </td>
+                                </tr>
+                            @endforeach
                         </tbody>
                     </table>
                 </div>

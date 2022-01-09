@@ -3,22 +3,21 @@
 namespace App\Imports;
 
 use App\Models\UjiAnava;
-use Illuminate\Support\Collection;
-use Maatwebsite\Excel\Concerns\ToCollection;
+use Maatwebsite\Excel\Concerns\ToModel;
 
-class UjiAnavaImport implements ToCollection
+class UjiAnavaImport implements ToModel
 {
     /**
-     * @param Collection $collection
+     * @param array $row
+     *
+     * @return \Illuminate\Database\Eloquent\Model|null
      */
-    public function collection(Collection $collection)
+    public function model(array $row)
     {
-        foreach ($collection as $row) {
-            UjiAnava::create([
-                'x1' => $row[0],
-                'x2' => $row[1],
-                'x3' => $row[2],
-            ]);
-        }
+        return new UjiAnava([
+            'x1' => $row[0],
+            'x2' => $row[1],
+            'x3' => $row[2],
+        ]);
     }
 }

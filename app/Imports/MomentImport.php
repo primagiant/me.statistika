@@ -3,21 +3,20 @@
 namespace App\Imports;
 
 use App\Models\Moment;
-use Illuminate\Support\Collection;
-use Maatwebsite\Excel\Concerns\ToCollection;
+use Maatwebsite\Excel\Concerns\ToModel;
 
-class MomentImport implements ToCollection
+class MomentImport implements ToModel
 {
     /**
-     * @param Collection $collection
+     * @param array $row
+     *
+     * @return \Illuminate\Database\Eloquent\Model|null
      */
-    public function collection(Collection $collection)
+    public function model(array $row)
     {
-        foreach ($collection as $row) {
-            Moment::create([
-                'x' => $row[0],
-                'y' => $row[1],
-            ]);
-        }
+        return new Moment([
+            'x' => $row[0],
+            'y' => $row[1],
+        ]);
     }
 }
