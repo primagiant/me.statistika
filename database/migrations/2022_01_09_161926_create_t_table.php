@@ -14,8 +14,7 @@ class CreateTTable extends Migration
     public function up()
     {
         Schema::create('t_table', function (Blueprint $table) {
-            $table->id();
-            $table->integer('df', 3);
+            $table->integer('df');
             $table->string('limapuluhpersen', 7)->nullable()->default('NULL');
             $table->string('duapuluhpersen', 7)->nullable()->default('NULL');
             $table->string('sepuluhpersen', 7)->nullable()->default('NULL');
