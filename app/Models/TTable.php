@@ -9,6 +9,5 @@ class TTable extends Model
 {
     use HasFactory;
     protected $table = 't_table';
-    protected $primary = 'df';
     public $timestamps = false;
 }

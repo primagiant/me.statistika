@@ -9,6 +9,5 @@ class FTable extends Model
 {
     use HasFactory;
     protected $table = 'f_table';
-    protected $primary = 'df1';
     public $timestamps = false;
 }

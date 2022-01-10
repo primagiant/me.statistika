@@ -28,8 +28,6 @@ class ZTableSeeder extends Seeder
             'sembilan' => '0.0000'
         ]);
 
-
-
         Ztable::create([
             'z' => '-3.9',
             'nol' => '0.0000',
@@ -43,8 +41,6 @@ class ZTableSeeder extends Seeder
             'delapan' => '0.0000',
             'sembilan' => '0.0000'
         ]);
-
-
 
         Ztable::create([
             'z' => '-3.8',

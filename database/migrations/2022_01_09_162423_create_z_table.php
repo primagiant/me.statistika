@@ -14,6 +14,7 @@ class CreateZTable extends Migration
     public function up()
     {
         Schema::create('z_table', function (Blueprint $table) {
+            $table->id();
             $table->decimal('z', 10, 1);
             $table->decimal('nol', 10, 4);
             $table->decimal('satu', 10, 4);

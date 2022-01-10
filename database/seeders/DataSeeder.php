@@ -21,8 +21,6 @@ class DataSeeder extends Seeder
             'nilai_2' => NULL,
             'nilai_3' => NULL,
             'keterangan' => NULL,
-            'created_at' => '2022-01-09 06:31:31',
-            'updated_at' => '2022-01-09 06:31:31'
         ]);
 
         Data::create([
@@ -32,8 +30,6 @@ class DataSeeder extends Seeder
             'nilai_2' => NULL,
             'nilai_3' => NULL,
             'keterangan' => NULL,
-            'created_at' => '2022-01-09 06:31:31',
-            'updated_at' => '2022-01-09 06:31:31'
         ]);
 
         Data::create([
@@ -43,8 +39,6 @@ class DataSeeder extends Seeder
             'nilai_2' => NULL,
             'nilai_3' => NULL,
             'keterangan' => NULL,
-            'created_at' => '2022-01-09 06:31:31',
-            'updated_at' => '2022-01-09 06:31:31'
         ]);
 
         Data::create([
@@ -54,8 +48,6 @@ class DataSeeder extends Seeder
             'nilai_2' => NULL,
             'nilai_3' => NULL,
             'keterangan' => NULL,
-            'created_at' => '2022-01-09 06:31:31',
-            'updated_at' => '2022-01-09 06:31:31'
         ]);
 
         Data::create([
@@ -65,8 +57,6 @@ class DataSeeder extends Seeder
             'nilai_2' => NULL,
             'nilai_3' => NULL,
             'keterangan' => NULL,
-            'created_at' => '2022-01-09 06:31:31',
-            'updated_at' => '2022-01-09 06:31:31'
         ]);
 
         Data::create([
@@ -76,8 +66,6 @@ class DataSeeder extends Seeder
             'nilai_2' => NULL,
             'nilai_3' => NULL,
             'keterangan' => NULL,
-            'created_at' => '2022-01-09 06:31:31',
-            'updated_at' => '2022-01-09 06:31:31'
         ]);
 
         Data::create([
@@ -87,8 +75,6 @@ class DataSeeder extends Seeder
             'nilai_2' => NULL,
             'nilai_3' => NULL,
             'keterangan' => NULL,
-            'created_at' => '2022-01-09 06:31:31',
-            'updated_at' => '2022-01-09 06:31:31'
         ]);
 
         Data::create([
@@ -98,8 +84,6 @@ class DataSeeder extends Seeder
             'nilai_2' => NULL,
             'nilai_3' => NULL,
             'keterangan' => NULL,
-            'created_at' => '2022-01-09 06:31:31',
-            'updated_at' => '2022-01-09 06:31:31'
         ]);
 
         Data::create([
@@ -109,8 +93,6 @@ class DataSeeder extends Seeder
             'nilai_2' => NULL,
             'nilai_3' => NULL,
             'keterangan' => NULL,
-            'created_at' => '2022-01-09 06:31:31',
-            'updated_at' => '2022-01-09 06:31:31'
         ]);
 
         Data::create([
@@ -120,8 +102,6 @@ class DataSeeder extends Seeder
             'nilai_2' => NULL,
             'nilai_3' => NULL,
             'keterangan' => NULL,
-            'created_at' => '2022-01-09 06:31:31',
-            'updated_at' => '2022-01-09 06:31:31'
         ]);
 
         Data::create([
@@ -131,8 +111,6 @@ class DataSeeder extends Seeder
             'nilai_2' => NULL,
             'nilai_3' => NULL,
             'keterangan' => NULL,
-            'created_at' => '2022-01-09 06:31:31',
-            'updated_at' => '2022-01-09 06:31:31'
         ]);
 
         Data::create([
@@ -142,8 +120,6 @@ class DataSeeder extends Seeder
             'nilai_2' => NULL,
             'nilai_3' => NULL,
             'keterangan' => NULL,
-            'created_at' => '2022-01-09 06:31:31',
-            'updated_at' => '2022-01-09 06:31:31'
         ]);
 
         Data::create([
@@ -153,8 +129,6 @@ class DataSeeder extends Seeder
             'nilai_2' => NULL,
             'nilai_3' => NULL,
             'keterangan' => NULL,
-            'created_at' => '2022-01-09 06:31:31',
-            'updated_at' => '2022-01-09 06:31:31'
         ]);
 
         Data::create([
@@ -164,8 +138,6 @@ class DataSeeder extends Seeder
             'nilai_2' => NULL,
             'nilai_3' => NULL,
             'keterangan' => NULL,
-            'created_at' => '2022-01-09 06:31:31',
-            'updated_at' => '2022-01-09 06:31:31'
         ]);
 
         Data::create([
@@ -175,8 +147,6 @@ class DataSeeder extends Seeder
             'nilai_2' => NULL,
             'nilai_3' => NULL,
             'keterangan' => NULL,
-            'created_at' => '2022-01-09 06:31:31',
-            'updated_at' => '2022-01-09 06:31:31'
         ]);
 
         Data::create([
@@ -186,8 +156,6 @@ class DataSeeder extends Seeder
             'nilai_2' => NULL,
             'nilai_3' => NULL,
             'keterangan' => NULL,
-            'created_at' => '2022-01-09 06:31:31',
-            'updated_at' => '2022-01-09 06:31:31'
         ]);
 
         Data::create([
@@ -197,8 +165,6 @@ class DataSeeder extends Seeder
             'nilai_2' => NULL,
             'nilai_3' => NULL,
             'keterangan' => NULL,
-            'created_at' => '2022-01-09 06:31:31',
-            'updated_at' => '2022-01-09 06:31:31'
         ]);
 
         Data::create([
@@ -208,8 +174,6 @@ class DataSeeder extends Seeder
             'nilai_2' => NULL,
             'nilai_3' => NULL,
             'keterangan' => NULL,
-            'created_at' => '2022-01-09 06:31:31',
-            'updated_at' => '2022-01-09 06:31:31'
         ]);
 
         Data::create([
@@ -219,8 +183,6 @@ class DataSeeder extends Seeder
             'nilai_2' => NULL,
             'nilai_3' => NULL,
             'keterangan' => NULL,
-            'created_at' => '2022-01-09 06:31:31',
-            'updated_at' => '2022-01-09 06:31:31'
         ]);
 
         Data::create([
@@ -230,8 +192,6 @@ class DataSeeder extends Seeder
             'nilai_2' => NULL,
             'nilai_3' => NULL,
             'keterangan' => NULL,
-            'created_at' => '2022-01-09 06:31:31',
-            'updated_at' => '2022-01-09 06:31:31'
         ]);
 
         Data::create([
@@ -241,8 +201,6 @@ class DataSeeder extends Seeder
             'nilai_2' => NULL,
             'nilai_3' => NULL,
             'keterangan' => NULL,
-            'created_at' => '2022-01-09 06:31:31',
-            'updated_at' => '2022-01-09 06:31:31'
         ]);
 
         Data::create([
@@ -252,8 +210,6 @@ class DataSeeder extends Seeder
             'nilai_2' => NULL,
             'nilai_3' => NULL,
             'keterangan' => NULL,
-            'created_at' => '2022-01-09 06:31:31',
-            'updated_at' => '2022-01-09 06:31:31'
         ]);
 
         Data::create([
@@ -263,8 +219,6 @@ class DataSeeder extends Seeder
             'nilai_2' => NULL,
             'nilai_3' => NULL,
             'keterangan' => NULL,
-            'created_at' => '2022-01-09 06:31:31',
-            'updated_at' => '2022-01-09 06:31:31'
         ]);
 
         Data::create([
@@ -274,8 +228,6 @@ class DataSeeder extends Seeder
             'nilai_2' => NULL,
             'nilai_3' => NULL,
             'keterangan' => NULL,
-            'created_at' => '2022-01-09 06:31:31',
-            'updated_at' => '2022-01-09 06:31:31'
         ]);
 
         Data::create([
@@ -285,8 +237,6 @@ class DataSeeder extends Seeder
             'nilai_2' => NULL,
             'nilai_3' => NULL,
             'keterangan' => NULL,
-            'created_at' => '2022-01-09 06:31:31',
-            'updated_at' => '2022-01-09 06:31:31'
         ]);
 
         Data::create([
@@ -296,8 +246,6 @@ class DataSeeder extends Seeder
             'nilai_2' => NULL,
             'nilai_3' => NULL,
             'keterangan' => NULL,
-            'created_at' => '2022-01-09 06:31:31',
-            'updated_at' => '2022-01-09 06:31:31'
         ]);
 
         Data::create([
@@ -307,8 +255,6 @@ class DataSeeder extends Seeder
             'nilai_2' => NULL,
             'nilai_3' => NULL,
             'keterangan' => NULL,
-            'created_at' => '2022-01-09 06:31:31',
-            'updated_at' => '2022-01-09 06:31:31'
         ]);
 
         Data::create([
@@ -318,8 +264,6 @@ class DataSeeder extends Seeder
             'nilai_2' => NULL,
             'nilai_3' => NULL,
             'keterangan' => NULL,
-            'created_at' => '2022-01-09 06:31:31',
-            'updated_at' => '2022-01-09 06:31:31'
         ]);
 
         Data::create([
@@ -329,8 +273,6 @@ class DataSeeder extends Seeder
             'nilai_2' => NULL,
             'nilai_3' => NULL,
             'keterangan' => NULL,
-            'created_at' => '2022-01-09 06:31:31',
-            'updated_at' => '2022-01-09 06:31:31'
         ]);
 
         Data::create([
@@ -340,8 +282,6 @@ class DataSeeder extends Seeder
             'nilai_2' => NULL,
             'nilai_3' => NULL,
             'keterangan' => NULL,
-            'created_at' => '2022-01-09 06:31:31',
-            'updated_at' => '2022-01-09 06:31:31'
         ]);
 
         Data::create([
@@ -351,8 +291,6 @@ class DataSeeder extends Seeder
             'nilai_2' => NULL,
             'nilai_3' => NULL,
             'keterangan' => NULL,
-            'created_at' => '2022-01-09 06:31:31',
-            'updated_at' => '2022-01-09 06:31:31'
         ]);
 
         Data::create([
@@ -362,8 +300,6 @@ class DataSeeder extends Seeder
             'nilai_2' => NULL,
             'nilai_3' => NULL,
             'keterangan' => NULL,
-            'created_at' => '2022-01-09 06:31:31',
-            'updated_at' => '2022-01-09 06:31:31'
         ]);
 
         Data::create([
@@ -373,8 +309,6 @@ class DataSeeder extends Seeder
             'nilai_2' => NULL,
             'nilai_3' => NULL,
             'keterangan' => NULL,
-            'created_at' => '2022-01-09 06:31:31',
-            'updated_at' => '2022-01-09 06:31:31'
         ]);
 
         Data::create([
@@ -384,8 +318,6 @@ class DataSeeder extends Seeder
             'nilai_2' => NULL,
             'nilai_3' => NULL,
             'keterangan' => NULL,
-            'created_at' => '2022-01-09 06:31:31',
-            'updated_at' => '2022-01-09 06:31:31'
         ]);
 
         Data::create([
@@ -395,8 +327,6 @@ class DataSeeder extends Seeder
             'nilai_2' => NULL,
             'nilai_3' => NULL,
             'keterangan' => NULL,
-            'created_at' => '2022-01-09 06:31:31',
-            'updated_at' => '2022-01-09 06:31:31'
         ]);
 
         Data::create([
@@ -406,8 +336,6 @@ class DataSeeder extends Seeder
             'nilai_2' => NULL,
             'nilai_3' => NULL,
             'keterangan' => NULL,
-            'created_at' => '2022-01-09 06:31:31',
-            'updated_at' => '2022-01-09 06:31:31'
         ]);
 
         Data::create([
@@ -417,8 +345,6 @@ class DataSeeder extends Seeder
             'nilai_2' => NULL,
             'nilai_3' => NULL,
             'keterangan' => NULL,
-            'created_at' => '2022-01-09 06:31:31',
-            'updated_at' => '2022-01-09 06:31:31'
         ]);
 
         Data::create([
@@ -428,8 +354,6 @@ class DataSeeder extends Seeder
             'nilai_2' => NULL,
             'nilai_3' => NULL,
             'keterangan' => NULL,
-            'created_at' => '2022-01-09 06:31:31',
-            'updated_at' => '2022-01-09 06:31:31'
         ]);
 
         Data::create([
@@ -439,8 +363,6 @@ class DataSeeder extends Seeder
             'nilai_2' => NULL,
             'nilai_3' => NULL,
             'keterangan' => NULL,
-            'created_at' => '2022-01-09 06:31:31',
-            'updated_at' => '2022-01-09 06:31:31'
         ]);
 
         Data::create([
@@ -450,8 +372,6 @@ class DataSeeder extends Seeder
             'nilai_2' => NULL,
             'nilai_3' => NULL,
             'keterangan' => NULL,
-            'created_at' => '2022-01-09 06:31:31',
-            'updated_at' => '2022-01-09 06:31:31'
         ]);
     }
 }

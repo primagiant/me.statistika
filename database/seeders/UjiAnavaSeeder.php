@@ -19,8 +19,6 @@ class UjiAnavaSeeder extends Seeder
             'x1' => 12,
             'x2' => 13,
             'x3' => 18,
-            'created_at' => '2022-01-09 07:24:50',
-            'updated_at' => '2022-01-09 07:24:50'
         ]);
 
         Ujianava::create([
@@ -28,8 +26,6 @@ class UjiAnavaSeeder extends Seeder
             'x1' => 13,
             'x2' => 15,
             'x3' => 18,
-            'created_at' => '2022-01-09 07:24:50',
-            'updated_at' => '2022-01-09 07:24:50'
         ]);
 
         Ujianava::create([
@@ -37,8 +33,6 @@ class UjiAnavaSeeder extends Seeder
             'x1' => 10,
             'x2' => 12,
             'x3' => 14,
-            'created_at' => '2022-01-09 07:24:50',
-            'updated_at' => '2022-01-09 07:24:50'
         ]);
 
         Ujianava::create([
@@ -46,8 +40,6 @@ class UjiAnavaSeeder extends Seeder
             'x1' => 15,
             'x2' => 18,
             'x3' => 20,
-            'created_at' => '2022-01-09 07:24:50',
-            'updated_at' => '2022-01-09 07:24:50'
         ]);
 
         Ujianava::create([
@@ -55,8 +47,6 @@ class UjiAnavaSeeder extends Seeder
             'x1' => 13,
             'x2' => 15,
             'x3' => 15,
-            'created_at' => '2022-01-09 07:24:50',
-            'updated_at' => '2022-01-09 07:24:50'
         ]);
 
         Ujianava::create([
@@ -64,8 +54,6 @@ class UjiAnavaSeeder extends Seeder
             'x1' => 14,
             'x2' => 17,
             'x3' => 19,
-            'created_at' => '2022-01-09 07:24:50',
-            'updated_at' => '2022-01-09 07:24:50'
         ]);
 
         Ujianava::create([
@@ -73,8 +61,6 @@ class UjiAnavaSeeder extends Seeder
             'x1' => 10,
             'x2' => 18,
             'x3' => 20,
-            'created_at' => '2022-01-09 07:24:50',
-            'updated_at' => '2022-01-09 07:24:50'
         ]);
 
         Ujianava::create([
@@ -82,8 +68,6 @@ class UjiAnavaSeeder extends Seeder
             'x1' => 12,
             'x2' => 20,
             'x3' => 21,
-            'created_at' => '2022-01-09 07:24:50',
-            'updated_at' => '2022-01-09 07:24:50'
         ]);
 
         Ujianava::create([
@@ -91,8 +75,6 @@ class UjiAnavaSeeder extends Seeder
             'x1' => 13,
             'x2' => 14,
             'x3' => 18,
-            'created_at' => '2022-01-09 07:24:50',
-            'updated_at' => '2022-01-09 07:24:50'
         ]);
 
         Ujianava::create([
@@ -100,8 +82,6 @@ class UjiAnavaSeeder extends Seeder
             'x1' => 14,
             'x2' => 16,
             'x3' => 17,
-            'created_at' => '2022-01-09 07:24:50',
-            'updated_at' => '2022-01-09 07:24:50'
         ]);
 
         Ujianava::create([
@@ -109,8 +89,6 @@ class UjiAnavaSeeder extends Seeder
             'x1' => 13,
             'x2' => 18,
             'x3' => 17,
-            'created_at' => '2022-01-09 07:24:50',
-            'updated_at' => '2022-01-09 07:24:50'
         ]);
 
         Ujianava::create([
@@ -118,8 +96,6 @@ class UjiAnavaSeeder extends Seeder
             'x1' => 10,
             'x2' => 16,
             'x3' => 19,
-            'created_at' => '2022-01-09 07:24:50',
-            'updated_at' => '2022-01-09 07:24:50'
         ]);
 
         Ujianava::create([
@@ -127,8 +103,6 @@ class UjiAnavaSeeder extends Seeder
             'x1' => 13,
             'x2' => 15,
             'x3' => 16,
-            'created_at' => '2022-01-09 07:24:50',
-            'updated_at' => '2022-01-09 07:24:50'
         ]);
 
         Ujianava::create([
@@ -136,8 +110,6 @@ class UjiAnavaSeeder extends Seeder
             'x1' => 10,
             'x2' => 13,
             'x3' => 17,
-            'created_at' => '2022-01-09 07:24:50',
-            'updated_at' => '2022-01-09 07:24:50'
         ]);
 
         UjiAnava::create([
@@ -145,8 +117,6 @@ class UjiAnavaSeeder extends Seeder
             'x1' => 15,
             'x2' => 16,
             'x3' => 14,
-            'created_at' => '2022-01-09 07:24:50',
-            'updated_at' => '2022-01-09 07:24:50'
         ]);
     }
 }
