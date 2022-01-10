@@ -24,11 +24,11 @@
                                 </th>
                                 <th
                                     class="px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
-                                    Rentangan
+                                    X <sub>1</sub>
                                 </th>
                                 <th
                                     class="px-6 bg-gray-50 text-gray-500 align-middle border border-solid border-gray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center">
-                                    Frequensi
+                                    X <sub>2</sub>
                                 </th>
                             </tr>
                         </thead>
